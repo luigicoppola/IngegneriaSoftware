@@ -1,0 +1,252 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>TripBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <!--Favicon-->
+    <link rel="icon" href="C:/Users/coppg/Desktop/viaggi/src/main/resources/templates/image/favicon.png" type="image/png" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
+    <link href="C:/Users/coppg/Desktop/viaggi/src/main/resources/templates/css/style.css" rel="stylesheet" />
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+      
+      
+      
+      
+      
+      
+      
+      
+      <!--Navbar-->
+
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a href="#" class="navbar-brand">
+                <img src="C:/Users/coppg/Desktop/viaggi/src/main/resources/templates/image/logo.png" height="50" >
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto topnav"><!--
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop Pre-Owned</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop New Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clearence Event</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Carfax</a>
+                        <a class="dropdown-item" href="#">Carproof</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Omnivic</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>-->
+                <li class="nav-item"> 
+                    <a class="nav-link btn btn-primary text-white" type="button" href="login.php" >Accedi</a>                  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-danger text-white" type="button" href="registration.php" >Registrati</a>
+                </li>
+            </ul>
+        </div>
+
+      
+            
+
+    </nav>
+
+
+
+  <!-- Fine Navbar -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <section class="search-sec">
+    <div class="container">
+        <form action="#" method="post" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt" id="exampleFormControlSelect1" required="required">
+                                <option>Tipologia</option>
+                                <option>Hotels</option>
+                                <option>Ristoranti</option>
+                                <option>Attrazioni</option>
+                                
+                            </select>
+                        </div>
+                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            
+                                  <input class="form-control search-slt" type="text" name="address" placeholder="Luogo o Nome">
+                        </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                <option>Prezzo (persona)</option>
+                                <option>20-100 euro</option>
+                                <option>100-250 euro</option>
+                                <option>250-500 euro</option>
+                                <option>500+ euro</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button type="button" class="btn btn-primary wrn-btn">Cerca</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+  <!-- Card deck -->
+  <div class="card-deck">
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="C:/Users/coppg/Desktop/viaggi/src/main/resources/templates/image/hotels.jpg"
+          alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">HOTELS</h4>
+        <!--Text-->
+        <p class="card-text">Una vasta scelta di Hotels recensiti dagli utenti di Tripbook.it</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-light-blue btn-md">Visualizza</button>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="C:/Users/coppg/Desktop/viaggi/src/main/resources/templates/image/ristorante.jpg"
+          alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">RISTORANTI</h4>
+        <!--Text-->
+        <p class="card-text">Una vasta scelta di ristoranti recensiti dagli utenti di Tripbook.it.</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-light-blue btn-md">Visualizza</button>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+    <!-- Card -->
+
+    <div class="card mb-4 ">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="C:/Users/coppg/Desktop/viaggi/src/main/resources/templates/image/zoo.jpg"
+          alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">ATTRAZIONI</h4>
+        <!--Text-->
+        <p class="card-text">Una vasta scelta di attrazioni recensite dagli utenti di Tripbook.it.</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-light-blue btn-md">Visualizza</button>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+  </div>
+  <!-- Card deck -->
+    <!-- Card -->
+   
+<!-- Footer -->
+<footer class="page-footer font-small black">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Tripbook | All right reserved | Designed by INGSW1920_53</div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>
