@@ -33,11 +33,11 @@ import exceptions.passwordException;
 
 /*
  * Author: Alessio Spina
- * Class: User
+ * Class: Utente
  * Description: An entity is annotated as @Entity, and has a special relationship with your database - generally 
  * 				each instance of an entity corresponds to a single row and the class itself corresponds to the table 
  * 				in which those rows are stored. In any case, we supply annotations for persistence on our entity classes. 
- * 				[User is a Entity who rappresents a list of accounts situated in the table "User" of DB.]
+ * 				[Utente is a Entity who rappresents a list of accounts situated in the table "Utente" of DB.]
  * 				
  * 				Un'entità è annotata come @Entity e ha una relazione speciale con il tuo database - in generale
  * 				ogni istanza di un'entità corrisponde a una singola riga e la classe stessa corrisponde alla tabella
@@ -46,7 +46,7 @@ import exceptions.passwordException;
 
 @Entity
 @Table(name="user")
-public class User implements Serializable {
+public class Utente implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -67,7 +67,7 @@ public class User implements Serializable {
 	@Column(name="password")
 	private String password;
 
-    public User(String nome, String cognome, String username, String password) {
+    public Utente(String nome, String cognome, String username, String password) {
         this.nome = nome;
         this.cognome = cognome;
         this.username = username;
