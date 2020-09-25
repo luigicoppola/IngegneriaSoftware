@@ -14,6 +14,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonView;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 /**
  *
  * @author coppg
@@ -34,6 +36,15 @@ public class Recensione implements Serializable{
         
         @Column(name="titolo")
 	private String titolo;
+        
+        
+        @OneToMany
+        @JoinColumn(name="id_utente", referencedColumnName="id")
+        private Integer id_utente;
+        
+        @OneToMany
+        @JoinColumn(name="id_struttura", referencedColumnName="id")
+        private Integer id_struttura;
 
     public Recensione(Integer id, String testo, Integer voto, String titolo) {
         this.id = id;
