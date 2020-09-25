@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ap.viaggi;
+package exceptions;
 
-/**
- *
- * @author coppg
- */
-public class User {
-    
+
+public class CredentialsException extends Exception {
+	public CredentialsException(String msg) {
+		super(msg);
+		
+	}
+
 }
